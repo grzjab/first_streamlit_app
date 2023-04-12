@@ -45,7 +45,7 @@ def get_fruit_load_list():
     my_cur.execute("select * from PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST")
     return my_cur.fetchall()
 streamlit.header("The fruit load list contains:")
-if streamlit.buttion("Get Fruit Load list"):
+if streamlit.button("Get Fruit Load list"):
     streamlit.dataframe(get_fruit_load_list())
 
 
